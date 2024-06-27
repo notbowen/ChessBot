@@ -1,0 +1,7 @@
+[package]
+name = "chess-bot"
+version = "0.0.1"
+edition = "2021"
+authors = ["Hu Bowen <contact@hubowen.dev>", "Chia Wei En, Wayne <>"]
+
+[dependencies]

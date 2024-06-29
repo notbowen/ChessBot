@@ -14,7 +14,8 @@ The following section lists all of our current (and)
 planned versions for the bot, with incremental updates
 to make the bot's elo go stonks. Currently, most of the
 features are stolen from Rustic Chess's development
-guide, which can be found [here](https://rustic-chess.org/introduction/introduction.html).
+guide & GitHub repo, which can be found [here](https://rustic-chess.org/introduction/introduction.html)
+and [here](https://github.com/mvanthoor/rustic).
 
 Note that the planned features are not final and
 may change any time.

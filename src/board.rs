@@ -1,7 +1,7 @@
 // Board related stuff
 
 use crate::bits;
-use crate::defs::{Bitboard, Constants, EMPTY, Piece, Pieces, Side, Sides, Square, BB_SQUARES};
+use crate::defs::{BB_SQUARES, Bitboard, Constants, EMPTY, Piece, Pieces, Side, Sides, Square};
 use crate::state::GameState;
 
 mod fen;

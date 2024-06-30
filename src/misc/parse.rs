@@ -1,5 +1,4 @@
-use crate::defs::{Piece, Pieces, Square, SQUARE_NAME};
-use if_chain::if_chain;
+use crate::defs::{Piece, Square, SQUARE_NAME};
 
 pub type PotentialMove = (Square, Square, Piece);
 pub type ParseMoveResult = Result<PotentialMove, ()>;

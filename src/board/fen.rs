@@ -1,11 +1,13 @@
-use super::Board;
-use crate::defs::{Files, Pieces, Ranks, Sides, Square, Squares, BB_SQUARES, FEN_START_POSITION, CastlingRights, MAX_MOVE_RULE, MAX_GAME_MOVES};
 use std::fmt;
 use std::fmt::Display;
-use std::fs::read_to_string;
 use std::ops::RangeInclusive;
+
 use if_chain::if_chain;
+
+use crate::defs::{BB_SQUARES, CastlingRights, FEN_START_POSITION, Files, MAX_GAME_MOVES, MAX_MOVE_RULE, Pieces, Ranks, Sides, Square, Squares};
 use crate::misc::parse;
+
+use super::Board;
 
 const FEN_PARTS: usize = 6;
 const LIST_OF_PIECES: &str = "kqrbnpKQRBNP";
@@ -196,7 +198,7 @@ fn en_passant(board: &mut Board, part: &str) -> FenResult {
                 Ok(())
             }
             _ => Err(FenError::EnPassantError),
-        }
+        };
     }
 
     Err(FenError::EnPassantError)
